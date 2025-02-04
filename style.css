@@ -44,6 +44,11 @@ header {
     cursor: pointer;
 }
 
+.icon {
+    width: 40px; /* Ajuste selon tes besoins */
+    height: auto;
+}
+
 .social-icons {
     display: flex;
     flex-direction: column;
@@ -58,6 +63,7 @@ header {
     width: 24px;
     height: 24px;
 }
+
 
 .hero {
     display: flex;
