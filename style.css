@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00eaff;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    position: relative;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 80px;
+    color: #00eaff;
+}
+
+.hero h2 {
+    font-size: 24px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.hero button {
+    background-color: #ff00ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.hero img {
+    max-width: 50%;
+}
+
+.color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.color-options img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+}
+
+.meilleures-ventes .produits {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nouvelles-collections .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
