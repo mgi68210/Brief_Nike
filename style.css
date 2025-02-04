@@ -70,7 +70,8 @@ header {
 }
 
 .hero-text {
-    max-width: 50%;
+    max-width: 100%;    
+    
 }
 
 .hero h1 {
@@ -96,8 +97,9 @@ header {
 }
 
 .hero img {
-    max-width: 100%;  /* S'adapte à la largeur de la section */
-    height: auto;     /* Maintient le ratio de l'image */
+    max-width: 110%;  
+    position:center;
+    height: auto;     
 }
 
 .color-options {
