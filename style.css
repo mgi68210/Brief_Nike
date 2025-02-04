@@ -12,20 +12,19 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #1c1c1c;
-    position: relative;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00eaff;
+.logo img {
+    width: 50px;
+    height: auto;
 }
 
-.nav-links ul {
+.nav-links {
     display: flex;
-    list-style: none;
+    flex-grow: 1;
+    justify-content: flex-end;
     gap: 20px;
-    padding: 0;
+    margin-right: 20px;
 }
 
 .nav-links a {
