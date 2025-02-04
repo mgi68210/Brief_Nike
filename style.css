@@ -44,10 +44,6 @@ header {
     cursor: pointer;
 }
 
-.icon {
-    width: 40px; /* Ajuste selon tes besoins */
-    height: auto;
-}
 
 .social-icons {
     display: flex;
@@ -60,8 +56,8 @@ header {
 }
 
 .social-icons img {
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
 }
 
 
@@ -100,7 +96,8 @@ header {
 }
 
 .hero img {
-    max-width: 50%;
+    max-width: 100%;  /* S'adapte à la largeur de la section */
+    height: auto;     /* Maintient le ratio de l'image */
 }
 
 .color-options {
