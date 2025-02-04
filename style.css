@@ -129,10 +129,54 @@ header {
     gap: 20px;
     padding: 20px;
 }
-
-footer {
+.footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     padding: 20px;
     background-color: #1c1c1c;
+    align-items: center; /* Centre le contenu horizontalement */
+}
+
+.columns {
+    display: flex;
+    justify-content: center; /* Centre les colonnes horizontalement */
+    flex-wrap: wrap; /* Pour s'assurer que les colonnes s'adaptent à des écrans plus petits */
+    width: 100%; /* Occupe toute la largeur disponible */
+}
+
+.column {
+    flex: 1; /* Chaque colonne occupe une part égale de l'espace disponible */
+    padding: 10px;
+    text-align: left; /* Garde le texte aligné à gauche */
+}
+
+.column ul {
+    list-style-type: none; /* Enlève les puces */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève le margin par défaut */
+}
+
+.footer-bottom {
+    display: flex; /* Affichage en ligne de ces éléments */
+    justify-content: space-between; /* Espacement égal entre le texte de copyright et les logos */
+    align-items: center; /* Alignement vertical au centre */
+    width: 100%; /* Occupe toute la largeur disponible */
+    margin-top: 20px;
+}
+
+.social-media {
+    display: flex; /* Met les logos sur la même ligne */
+    gap: 15px; /* Espacement entre les logos */
+}
+
+.social-media a img {
+    width: 30px; /* Taille des icônes des réseaux sociaux */
+    height: 30px;
+    object-fit: cover;
+}
+
+.copyright {
+    text-align: left; /* Aligner le texte à gauche */
+    font-size: 14px;
+    flex: 1; /* Prend tout l'espace disponible restant */
 }
