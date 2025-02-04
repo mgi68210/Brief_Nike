@@ -1,10 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+/* Global reset */
+* {
+    margin: 0; 
     padding: 0;
-    background-color: #121212;
-    color: #fff;
+    box-sizing: border-box;
 }
+
+body {
+    background: linear-gradient(90deg, #3E4044 0%, #28292F 100%);
+    color: #fff; 
+    font-family: sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Conteneur principal */
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
 
 header {
     display: flex;
@@ -134,49 +148,49 @@ header {
     flex-direction: column;
     padding: 20px;
     background-color: #1c1c1c;
-    align-items: center; /* Centre le contenu horizontalement */
+    align-items: center; 
 }
 
 .columns {
     display: flex;
-    justify-content: center; /* Centre les colonnes horizontalement */
-    flex-wrap: wrap; /* Pour s'assurer que les colonnes s'adaptent à des écrans plus petits */
-    width: 100%; /* Occupe toute la largeur disponible */
+    justify-content: center; 
+    flex-wrap: wrap; 
+    width: 100%; 
 }
 
 .column {
-    flex: 1; /* Chaque colonne occupe une part égale de l'espace disponible */
+    flex: 1; 
     padding: 10px;
-    text-align: left; /* Garde le texte aligné à gauche */
+    text-align: left;
 }
 
 .column ul {
-    list-style-type: none; /* Enlève les puces */
-    padding: 0; /* Enlève le padding par défaut */
-    margin: 0; /* Enlève le margin par défaut */
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
 }
 
 .footer-bottom {
-    display: flex; /* Affichage en ligne de ces éléments */
-    justify-content: space-between; /* Espacement égal entre le texte de copyright et les logos */
-    align-items: center; /* Alignement vertical au centre */
-    width: 100%; /* Occupe toute la largeur disponible */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
     margin-top: 20px;
 }
 
 .social-media {
-    display: flex; /* Met les logos sur la même ligne */
-    gap: 15px; /* Espacement entre les logos */
+    display: flex; 
+    gap: 15px; 
 }
 
 .social-media a img {
-    width: 30px; /* Taille des icônes des réseaux sociaux */
+    width: 30px; 
     height: 30px;
     object-fit: cover;
 }
 
 .copyright {
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left;
     font-size: 14px;
-    flex: 1; /* Prend tout l'espace disponible restant */
-}
+    flex: 1;
+} 
