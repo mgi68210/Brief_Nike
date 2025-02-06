@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;   
+    padding: 10px;
+    width: 100%;
+}
+
+/* LOGO */
+.logo-header {
+    width: 40px;
+    height: 40px;
+}
+
+/* CONTAINER DROIT (LIENS + ICONES) */
+.right-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ICONES */
+.icons-header {
+    display: flex;
+    gap: 5px;
+}
+
+.icon-header {
+    width: 25px;
+    height: 25px;
+}
+
+.icon-header:hover {
+    color: #77f8ff; /* Change la couleur au survol (optionnel) */
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    gap: 15px;
+    padding: 5px 10px;
+}
+
+nav a {
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold;
+    color: white; /* Texte en blanc */
+}
+
+nav a:hover {
+    color: #77f8ff; /* Change la couleur au survol (optionnel) */
+}
+
+/* SECTION1 */
+
+
+.section1 {
+    display: flex;
+    align-items: flex-start;  /* Aligner le contenu du texte en haut */
+    justify-content: space-between;
+    background: #222;
+    color: white;
+    padding: 50px;
+}
+
+/* TEXTE À GAUCHE */
+.left-box {
+    max-width: 40%;
+    margin-top: 0;  /* Enlever la marge pour rapprocher le texte du haut */
+}
+
+.left-box h1 {
+    font-size: 80px;
+    color: #77f8ff;
+    margin-top: 0;  /* Assurer que le titre soit directement en haut */
+}
+
+.left-box h2 {
+    font-size: 30px;
+}
+
+.left-box p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.left-box button {
+    margin-top: 20px;
+    padding: 8px 15px;   /* Réduire la taille du bouton */
+    background: #ff00ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;   /* Réduire la taille de la police */
+}
+
+/* IMAGE DE FOND */
+.background-box {
+    position: relative;
+}
+
+.background-box img {
+    width:  900px;  /* Agrandir l'image de la chaussure */
+    height: auto;
+}
+
+.chaussurenike {
+    width:  1000px;  /* Agrandir l'image de la chaussure */
+    height: auto;
+    position: relative;
+}
+
+/* CHAUSSURES À DROITE */
+.shoes-horizontal {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: flex-end;  /* Déplacer les chaussures à droite */
+    width: 100%;   /* Prendre toute la largeur disponible */
+}
+
+.shoes-horizontal img {
+    width: 100px;  /* Augmenter la taille des chaussures */
+    height: auto;  /* Maintenir les proportions */
+    border: 2px solid white;  /* Ajouter des bords blancs autour des images */
+    padding: 5px;  /* Ajouter un petit padding pour l'espacement entre les bords */
+}
+
+/* ICONES SOCIALES À DROITE */
+.social-vertical {
+    position: absolute;
+    right: 10px;
+    top: 50%;     /* Centrer verticalement */
+    transform: translateY(-50%);  /* Décalage pour être centré précisément */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-vertical img {
+    width: 30px;
+    height: 30px;
+}
