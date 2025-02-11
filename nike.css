@@ -8,7 +8,7 @@ body {
 
 /* Supprimer le fond de la règle universelle pour les autres éléments */
 * {
-    margin: 10px;
+    margin: 5px;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
@@ -130,7 +130,7 @@ h2 {
 .chaussurenike {
     position: absolute;
     right: 30%;
-    top: 30%;
+    top: 40%;
     transform: translateY(-40%);
     width: 800px;
     height: auto;
@@ -144,7 +144,7 @@ h2 {
     width: 100%;
     position: absolute;
     right: 0;
-    top: 50%; /* Déplace les chaussures un peu plus bas */
+    top: 60%; 
 }
 
 .shoes-horizontal img {
@@ -175,85 +175,179 @@ h2 {
 /* SECONDE SECTION */
 
 
-/* SECONDE SECTION */
 .pricing-section1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
-    background: #bfbfbf;
+    height: 100vh;
     padding: 20px;
-    border: 2px solid black;
+    box-sizing: border-box;
 }
 
 .pricing-section1 h2 {
-    font-size: 24px;
+    color: #77f8ff;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
-    align-self: flex-start;
     padding-left: 20px;
 }
 
 .cards-container1 {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 20px; /* Espacement plus grand entre les cartes */
-    justify-content: center;
+    justify-content: space-between;
+    gap: 0px;
+    width: 100%;
+    height: 100%;
 }
 
 .card1 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 .image-box1 {
-    width: 100%;
-    height: 250px; /* Augmenter la hauteur des images */
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .image-box1 img {
-    width: 150%; /* L'image prend toute la largeur du cadre */
-    height: 150%; /* L'image prend toute la hauteur du cadre */
-    object-fit: contain; /* Remplir le cadre sans couper l'image */
-    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Conteneur du titre et du prix */
 .text-box1 {
     display: flex;
-    justify-content: space-between; /* Espacement entre le titre et le prix */
-    align-items: center; /* Aligner les éléments verticalement */
-    width: 100%;
-    font-size: 18px;
-    font-weight: bold;
-    background: #bfbfbf;
-    padding: 10px;
-    border-top: 2px solid black;
-    height: 50px; /* Hauteur plus petite pour ne pas trop espacer */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: left;
+    height: 30%;
+    box-sizing: border-box;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .text-box1 h3 {
+    color: #77f8ff;
     margin: 0;
-    margin-top: 20px;
-    font-size: 18px;
-    white-space: nowrap; /* Empêche le retour à la ligne */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Ajoute "..." si le titre est trop long */
-    flex: 1; /* Permet au titre de prendre tout l'espace disponible */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.text-box1 p {
+    color: white;
+    margin: 5px 0;
+    font-size: 16px;
 }
 
 .price1 {
-    margin-left: 10px;
-    margin-top: 1px;
-    white-space: nowrap; /* Empêche le prix de passer à la ligne */
-    font-size: 20px; /* Agrandir la taille du prix */
-    text-align: right; /* Aligner le prix à droite */
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    align-self: flex-start;
 }
 
+/* SECTION 3 */
 
+.cadre3 {
+    border: solid 4px blue;
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.cadreCarre {
+    width: 971px;
+    height: 780px;
+    border: solid 4px white;
+    margin: 60px;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 4px;
+    position: relative;
+}
+.parent img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.enfant1 {
+    position: relative;
+    grid-column: span 3 / span 3;
+    grid-row: span 6 / span 6;
+}
+.enfant2 {
+    position: relative;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 7;
+}
+.enfant3 {
+    position: relative;
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 7;
+}
+.enfant4 {
+    position: relative;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+}
+.enfant5 {
+    position: relative;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 4;
+}
+.enfant6 {
+    position: relative;
+    grid-column: span 2 / span 2;
+    grid-row: span 8 / span 8;
+    grid-column-start: 6;
+    grid-row-start: 1;
+}
+.voir {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 13px;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 40%;
+    cursor: pointer;
+}
+.enfant1 {
+display: flex;
+align-items: stretch;
+justify-content: stretch;
+overflow: hidden;
+}
+
+.enfant1 img {
+width: 150%;
+height: 100%;
+object-fit: contain; /* Garde l'image entière */
+display: block; /* Évite tout espace blanc sous l'image */
+}
