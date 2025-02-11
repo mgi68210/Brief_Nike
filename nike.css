@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 h2 {
-    font-weight: normal; /* Tout le texte du <h2> sera en normal, donc pas de gras */
+    font-weight: normal; 
 }
 
 .normal-weight {
@@ -179,6 +179,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
     width: 100%;
     height: 100vh;
     padding: 20px;
@@ -265,14 +266,14 @@ h2 {
 .cadre3 {
     border: solid 4px blue;
     margin: 60px;
-    justify-content: center;
-    align-items: center;
+
 }
 .cadreCarre {
-    width: 971px;
+    width: 1100px;
     height: 780px;
     border: solid 4px white;
-    margin: 60px;
+    margin-left: 10% ;
+
 }
 .parent {
     display: grid;
@@ -280,6 +281,7 @@ h2 {
     grid-template-rows: repeat(8, 1fr);
     gap: 4px;
     position: relative;
+
 }
 .parent img {
     object-fit: cover;
@@ -348,6 +350,74 @@ overflow: hidden;
 .enfant1 img {
 width: 150%;
 height: 100%;
-object-fit: contain; /* Garde l'image entière */
-display: block; /* Évite tout espace blanc sous l'image */
+object-fit: contain; 
+display: block; 
+}
+
+/* FOOTER */
+
+.footer-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+}
+
+.top-box1 {
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.top-box1 ul {
+    color: white;
+    list-style: none;
+}
+
+.divider1 {
+    width: 90%;
+    height: 2px;
+    margin: 10px 0;
+}
+
+.bottom-box1 {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bottom-box1 p {
+    color: white;
+    text-align: left; 
+    font-size: 14px;
+    padding: 10px;
+}
+    
+
+.small-boxes1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    gap: 5px;
+    padding: 5px;
+}
+
+.small-boxes1 div {
+    width: 20px;
+    height: 20px;
+}
+
+.lignerose {
+    width: 30%;
+    height: 5px; /* Épaisseur */
+    background-color:#ff00ff;; /* Couleur rose */
+    border: none;
+    margin-left: 0; /* Collé à gauche */
 }
