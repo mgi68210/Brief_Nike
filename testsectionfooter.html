@@ -93,6 +93,238 @@
             </div>
         </div>
     </div>
-
 </body>
+
+
+<style>
+
+
+    .footer-section1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 250px;
+        padding: 20px;
+    }
+
+    .top-box1 {
+        color: white;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .top-box1 ul {
+        color: white;
+        font-size: 20px;
+        list-style: none;
+    }
+
+    .divider1 {
+        width: 90%;
+        height: 2px;
+        margin: 10px 0;
+    }
+
+    .bottom-box1 {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .bottom-box1 p {
+        color: white;
+        text-align: left; 
+        font-size: 14px;
+        padding: 10px;
+    }
+        
+    
+
+    .small-boxes1 {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .small-boxes1 div {
+        width: 20px;
+        height: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="footer-section1">
+    <div class="top-box1">
+        <ul>    <li>CARTES CADEAUX</li>
+                <li>TROUVER UN MAGASIN</li>
+                <li>S'INSCRIRE AUX E-MAILS</li>
+                <li>DEVENIR MEMBRE</li>
+                <li>RÉDUCTION POUR ÉTUDIANTS</li>
+                <li>COMMENTAIRE SUR LE SITE</li>
+        </ul>
+
+        <ul>   <li><b>AIDE</b></li>
+                <li>Statut de commande</li>
+                <li>Expédition et livraison</li>
+                <li>Retours</li>
+                <li>Modes de paiement</li>
+                <li>Nous contacter</li>
+        </ul>
+
+
+        <ul>   <li><b>À PROPOS DE NIKE</b></li>
+                <li>Actualités</li>
+                <li>Carrières</li>
+                <li>Investisseurs</li>
+                <li>Développement durable</li>
+        </ul>
+    </div>
+<div class="divider1"></div>
+        <div class="bottom-box1">
+            <p>©2020 Nike. Inc. Tous droits réservés</p>
+            <div class="small-boxes1">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./photo-nike/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./photo-nike/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="./photo-nike/twitter.png" alt="Twitter">
+            </a>
+            </div>
+        </div>
+</div>
+
+
+<!-- Footer avec les colonnes de texte -->
+<footer class="footer">
+    <div class="columns">
+        <div class="column">
+            <ul class="no-list">
+            <li>CARTES CADEAUX</li>
+        <li>TROUVER UN MAGASIN</li>
+            <li>S'INSCRIRE AUX E-MAILS</li>
+            <li>DEVENIR MEMBRE</li>
+            <li>RÉDUCTION POUR ÉTUDIANTS</li>
+            <li>COMMENTAIRE SUR LE SITE</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="no-list">
+                <li><b>AIDE</b></li>
+                <li>Statut de commande</li>
+                <li>Expédition et livraison</li>
+                <li>Retours</li>
+                <li>Modes de paiement</li>
+                <li>Nous contacter</li>
+                </ul>
+        </div>
+        <div class="column">
+            <ul class="no-list">
+            <li><b>À PROPOS DE NIKE</b></li>
+            <li>Actualités</li>
+            <li>Carrières</li>
+            <li>Investisseurs</li>
+            <li>Développement durable</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Copyright à gauche et logos sociaux à droite -->
+    <div class="footer-bottom">
+        <div class="copyright">
+            <p>©2020 Nike. Inc. Tous droits réservés</p>
+        </div>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="./nike/FB.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="./nike/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="./nike/Twitter.png" alt="Twitter">
+            </a>
+        </div>
+    </div>
+</footer>
+<style>
+/* Footer avec les colonnes de texte */
+.footer {
+    background-color: #333; /* Fond sombre pour le footer */
+    color: white; /* Texte blanc */
+}
+
+.columns {
+    display: flex; /* Affichage en ligne des colonnes */
+    justify-content: space-between; /* Espacement égal entre les colonnes */
+    margin-bottom: 20px; /* Un peu d'espace entre les colonnes et le bas du footer */
+    align-items: center;
+}
+
+.column {
+    flex: 1; /* Chaque colonne prend une part égale de l'espace */
+    margin: 0 20px; /* Espacement horizontal entre les colonnes */
+}
+
+.column h3 {
+    text-align: center;
+    font-size: 18px; /* Taille des titres */
+    color: #fff; /* Couleur des titres */
+}
+
+.column p {
+    font-size: 14px; /* Taille du texte */
+    color: #bbb; /* Couleur du texte */
+}
+
+/* Supprimer les puces de la liste */
+.no-list {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime les marges internes par défaut */
+    margin: 0; /* Supprime les marges externes par défaut */
+}
+
+.no-list li {
+    margin: 10px 0; /* Ajoute un peu d'espace entre les éléments de la liste */
+}
+
+/* Section du bas du footer (copyright et logos) */
+.footer-bottom {
+    display: flex; /* Affichage en ligne de ces éléments */
+    justify-content: space-between; /* Espacement égal entre le texte de copyright et les logos */
+    align-items: center; /* Alignement vertical au centre */
+}
+
+.social-media {
+    display: flex; /* Met les logos sur la même ligne */
+    gap: 15px; /* Espacement entre les logos */
+}
+
+.social-media a img {
+    width: 30px; /* Taille des icônes des réseaux sociaux */
+    height: 30px;
+    object-fit: cover;
+}
+
+.copyright {
+    text-align: left; /* Aligner le texte à gauche */
+    font-size: 14px;
+}
+</style>
+</body>
+
+
+
 </html>
