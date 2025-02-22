@@ -1,3 +1,4 @@
+
 * {
     margin: 0px;
     padding: 0;
@@ -7,12 +8,12 @@
 }
 
 body {
-    background-color: #333;
+    background-color: #333; 
     margin: 50PX;
     padding: 0;
     font-family: Arial, sans-serif;
 }
-
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
@@ -21,21 +22,25 @@ body {
     width: 100%;
 }
 
+/* LOGO */
 .logo-header img {
     width: 50px;
     height: 50px;
 }
 
+/* CONTAINER DROIT (LIENS + ICONES) */
 .right-container {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
+/* ICONES */
 .icons-header {
     display: flex;
     gap: 5px;
     align-items: center;
+
 }
 
 .icon-header {
@@ -47,6 +52,7 @@ body {
     color: #77f8ff;
 }
 
+/* NAVIGATION */
 nav {
     display: flex;
     gap: 15px;
@@ -63,6 +69,7 @@ nav a:hover {
     color: #77f8ff;
 }
 
+/* SECTION 1 */
 .section1 {
     display: flex;
     align-items: center;
@@ -72,6 +79,7 @@ nav a:hover {
     height: 100vh;
 }
 
+/* TEXTE À GAUCHE */
 .left-box {
     max-width: 40%;
     z-index: 2;
@@ -90,20 +98,24 @@ nav a:hover {
 }
 
 h2 {
-    font-weight: normal;
+    font-weight: normal; 
     color: #ffffff;
     font-size: 60px;
     font-weight: bold;
+
+
 }
 
 .normal-weight {
     font-weight: normal;
+    
 }
 
 .left-box p {
     font-size:30px;
     margin-top: 10px;
-    font-weight: normal;
+    font-weight: normal; 
+
 }
 
 .left-box button {
@@ -121,14 +133,16 @@ h2 {
     background: #d400d4;
 }
 
+/* CHAUSSURE PRINCIPALE */
 .chaussurenike {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    height: auto; 
 }
 
+/* CHAUSSURES À DROITE */
 .shoes-horizontal {
     display: flex;
     gap: 5px;
@@ -136,7 +150,7 @@ h2 {
     width: 100%;
     position: absolute;
     right: 0;
-    top: 60%;
+    top: 60%; 
 }
 
 .shoes-horizontal img {
@@ -146,8 +160,10 @@ h2 {
     height: 100px;
     width: 100px;
     object-fit:contain;
+
 }
 
+/* ICONES SOCIALES */
 .social-vertical {
     position: absolute;
     right: 10px;
@@ -162,6 +178,10 @@ h2 {
     width: 30px;
     height: 30px;
 }
+
+
+/* SECTION 2 */
+
 
 .pricing-section1 {
     display: flex;
@@ -231,13 +251,15 @@ h2 {
 .text-box1 h3 {
     color: #77f8ff;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .text-box1 p {
     color: white;
     margin: 5px 0;
     font-size: 16px;
+    font-weight: normal;
+
 }
 
 .price1 {
@@ -246,6 +268,8 @@ h2 {
     font-weight: bold;
     align-self: flex-start;
 }
+
+/* SECTION 3 */
 
 .cadre3 h2 {
     color: #77f8ff;
@@ -256,37 +280,38 @@ h2 {
 }
 
 .flexcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 70px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 70px;
+
+
 }
+
 
 .cadreCarre {
     width: 1000px;
     height: 800px;
-}
 
+}
 .parent {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 4px;
     position: relative;
-}
 
+}
 .parent img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-
 .enfant1 {
     position: relative;
     grid-column: span 3 / span 3;
     grid-row: span 6 / span 6;
 }
-
 .enfant2 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -294,7 +319,6 @@ h2 {
     grid-column-start: 1;
     grid-row-start: 7;
 }
-
 .enfant3 {
     position: relative;
     grid-column: span 3 / span 3;
@@ -302,7 +326,6 @@ h2 {
     grid-column-start: 3;
     grid-row-start: 7;
 }
-
 .enfant4 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -310,7 +333,6 @@ h2 {
     grid-column-start: 4;
     grid-row-start: 1;
 }
-
 .enfant5 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -318,7 +340,6 @@ h2 {
     grid-column-start: 4;
     grid-row-start: 4;
 }
-
 .enfant6 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -326,7 +347,6 @@ h2 {
     grid-column-start: 6;
     grid-row-start: 1;
 }
-
 .voir {
     position: absolute;
     bottom: 10px;
@@ -339,7 +359,6 @@ h2 {
     border-radius: 40%;
     cursor: pointer;
 }
-
 .enfant1 {
     display: flex;
     align-items: stretch;
@@ -350,9 +369,11 @@ h2 {
 .enfant1 img {
     width: 150%;
     height: 100%;
-    object-fit: contain;
-    display: block;
+    object-fit: contain; 
+    display: block; 
 }
+
+/* FOOTER */
 
 .footer-section1 {
     display: flex;
@@ -361,6 +382,7 @@ h2 {
     width: 100%;
     height: 250px;
     padding: 20px;
+
 }
 
 .top-box1 {
@@ -370,52 +392,61 @@ h2 {
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    
 }
 
 .top-box1 ul {
     color: white;
     list-style: none;
     margin-bottom: 20px;
-    font-weight: normal;
+    font-weight: normal; 
+
 }
 
+
+/* DIVIDER */
 .divider1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    align-items: center; 
+    width: 100%; 
 }
 
+/* BOÎTE DU BAS */
 .bottom-box1 {
     margin-top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
 }
 
+/* PARAGRAPHE */
 .bottom-box1 p {
-    color: white;
-    text-align: left;
-    font-size: 14px;
-    padding: 10px;
+    color: white; 
+    text-align: left; 
+    font-size: 14px; 
+    padding: 10px; 
     flex-grow: 1;
-    font-weight: normal;
+    font-weight: normal; 
 }
 
+/* PETITES BOÎTES */
 .small-boxes1 {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    align-items: center; 
+    gap: 15px; 
     padding: 5px;
 }
 
+
 .ligneroseB {
     width: 60%;
-    height: 7px;
-    background-color: #ff00ff;
-    margin: 20px auto;
+    height: 7px; 
+    background-color: #ff00ff; 
+    margin: 20px auto; 
 }
+
 
 .lignerose {
     width: 10%;
@@ -425,6 +456,211 @@ h2 {
 
 .Basic {
     width: 100%;
-    height: 3px;
+    height: 3px; 
     background-color:#646464;
+
 }
+
+
+   /* MEDIA QUERY POUR MOBILE */
+@media only screen and (max-width: 768px) {
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    /* LOGO */
+    .logo-header img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* CONTAINER DROIT (LIENS + ICONES) */
+    .right-container {
+        display: flex;
+        flex-direction: column;
+        align-items:flex-end;
+        gap: 15px;
+    }
+    
+    /* ICONES */
+    .icons-header {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    
+    }
+    
+    .icon-header {
+        width: auto;
+        height: auto;
+    }
+    
+    .icon-header:hover {
+        color: #77f8ff;
+    }
+    
+    /* NAVIGATION */
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+        padding: 5px 10px;
+    }
+    
+    nav a {
+        text-decoration: none;
+        font-weight: bold;
+        color: white;
+    }
+    
+    nav a:hover {
+        color: #77f8ff;
+    }
+
+    /* SECTION 1 */
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+    /* TEXTE À GAUCHE */
+    .left-box {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .left-box h1 {
+        font-size: 50px;
+    }
+
+    .left-box h2 {
+        font-size: 24px;
+    }
+
+    .left-box p {
+        font-size: 16px;
+    }
+
+    .left-box button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* CHAUSSURE PRINCIPALE */
+    .chaussurenike {
+        position: static;
+        margin: 20px auto;
+    }
+    .Chaussure-Nike{
+        width: 10px;
+        height: 10x;
+
+    }
+
+    /* ICONES SOCIALES */
+    .social-vertical {
+        position: static;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+
+
+
+/* SECTION 2 */
+.pricing-section1 {
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.cards-container1 {
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 {
+    width: 90%;
+    margin-bottom: 20px; /* Espacement entre les cartes */
+}
+
+.image-box1 img {
+    width: 100%;
+    height: auto;
+}
+
+.text-box1 {
+    text-align: center;
+}
+
+    /* SECTION 3 */
+    .cadre3 {
+        padding: 20px;
+    }
+
+    .cadreCarre {
+        width: 100%;
+        height: auto; 
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .enfant1, .enfant2, .enfant3, .enfant4, .enfant5, .enfant6 {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .voir {
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+
+
+    /* FOOTER */
+    .footer-section1 {
+        padding: 20px;
+    }
+
+    .top-box1 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .top-box1 ul {
+        padding: 0;
+        text-align: left;
+    }
+
+    .bottom-box1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .small-boxes1 {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Divider */
+    .divider1 {
+        margin: 20px 0;
+    }
+}
+
