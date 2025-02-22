@@ -154,12 +154,13 @@ h2 {
 }
 
 .shoes-horizontal img {
-    height: auto;
     background-image: radial-gradient(circle, #333333, #373737, #3a3a3a, #3e3e3e, #424242);
     border: 2px solid white;
     padding: 1px;
     height: 100px;
     width: 100px;
+    object-fit:contain;
+
 }
 
 /* ICONES SOCIALES */
