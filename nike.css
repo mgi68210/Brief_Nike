@@ -1,4 +1,3 @@
-
 * {
     margin: 0px;
     padding: 0;
@@ -8,12 +7,12 @@
 }
 
 body {
-    background-color: #333; /* Change la couleur ici selon tes préférences */
+    background-color: #333;
     margin: 50PX;
     padding: 0;
     font-family: Arial, sans-serif;
 }
-/* HEADER */
+
 .header {
     display: flex;
     align-items: center;
@@ -22,25 +21,21 @@ body {
     width: 100%;
 }
 
-/* LOGO */
 .logo-header img {
     width: 50px;
     height: 50px;
 }
 
-/* CONTAINER DROIT (LIENS + ICONES) */
 .right-container {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-/* ICONES */
 .icons-header {
     display: flex;
     gap: 5px;
     align-items: center;
-
 }
 
 .icon-header {
@@ -52,7 +47,6 @@ body {
     color: #77f8ff;
 }
 
-/* NAVIGATION */
 nav {
     display: flex;
     gap: 15px;
@@ -69,7 +63,6 @@ nav a:hover {
     color: #77f8ff;
 }
 
-/* SECTION 1 */
 .section1 {
     display: flex;
     align-items: center;
@@ -79,7 +72,6 @@ nav a:hover {
     height: 100vh;
 }
 
-/* TEXTE À GAUCHE */
 .left-box {
     max-width: 40%;
     z-index: 2;
@@ -98,24 +90,20 @@ nav a:hover {
 }
 
 h2 {
-    font-weight: normal; 
+    font-weight: normal;
     color: #ffffff;
     font-size: 60px;
     font-weight: bold;
-
-
 }
 
 .normal-weight {
     font-weight: normal;
-    
 }
 
 .left-box p {
     font-size:30px;
     margin-top: 10px;
-    font-weight: normal; /* Assurez-vous que le texte n'est pas en gras */
-
+    font-weight: normal;
 }
 
 .left-box button {
@@ -133,16 +121,14 @@ h2 {
     background: #d400d4;
 }
 
-/* CHAUSSURE PRINCIPALE */
 .chaussurenike {
     position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    height: auto; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
 }
 
-/* CHAUSSURES À DROITE */
 .shoes-horizontal {
     display: flex;
     gap: 5px;
@@ -150,7 +136,7 @@ h2 {
     width: 100%;
     position: absolute;
     right: 0;
-    top: 60%; 
+    top: 60%;
 }
 
 .shoes-horizontal img {
@@ -159,11 +145,9 @@ h2 {
     padding: 1px;
     height: 100px;
     width: 100px;
-    object-fit:;
-
+    object-fit:contain;
 }
 
-/* ICONES SOCIALES */
 .social-vertical {
     position: absolute;
     right: 10px;
@@ -178,10 +162,6 @@ h2 {
     width: 30px;
     height: 30px;
 }
-
-
-/* SECTION 2 */
-
 
 .pricing-section1 {
     display: flex;
@@ -267,8 +247,6 @@ h2 {
     align-self: flex-start;
 }
 
-/* SECTION 3 */
-
 .cadre3 h2 {
     color: #77f8ff;
     font-size: 80px;
@@ -278,38 +256,37 @@ h2 {
 }
 
 .flexcontainer {
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 70px;
-
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
 }
-
 
 .cadreCarre {
     width: 1000px;
     height: 800px;
-
 }
+
 .parent {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr);
     gap: 4px;
     position: relative;
-
 }
+
 .parent img {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
+
 .enfant1 {
     position: relative;
     grid-column: span 3 / span 3;
     grid-row: span 6 / span 6;
 }
+
 .enfant2 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -317,6 +294,7 @@ margin-bottom: 70px;
     grid-column-start: 1;
     grid-row-start: 7;
 }
+
 .enfant3 {
     position: relative;
     grid-column: span 3 / span 3;
@@ -324,6 +302,7 @@ margin-bottom: 70px;
     grid-column-start: 3;
     grid-row-start: 7;
 }
+
 .enfant4 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -331,6 +310,7 @@ margin-bottom: 70px;
     grid-column-start: 4;
     grid-row-start: 1;
 }
+
 .enfant5 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -338,6 +318,7 @@ margin-bottom: 70px;
     grid-column-start: 4;
     grid-row-start: 4;
 }
+
 .enfant6 {
     position: relative;
     grid-column: span 2 / span 2;
@@ -345,6 +326,7 @@ margin-bottom: 70px;
     grid-column-start: 6;
     grid-row-start: 1;
 }
+
 .voir {
     position: absolute;
     bottom: 10px;
@@ -357,21 +339,20 @@ margin-bottom: 70px;
     border-radius: 40%;
     cursor: pointer;
 }
+
 .enfant1 {
-display: flex;
-align-items: stretch;
-justify-content: stretch;
-overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    overflow: hidden;
 }
 
 .enfant1 img {
-width: 150%;
-height: 100%;
-object-fit: contain; 
-display: block; 
+    width: 150%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
 }
-
-/* FOOTER */
 
 .footer-section1 {
     display: flex;
@@ -380,7 +361,6 @@ display: block;
     width: 100%;
     height: 250px;
     padding: 20px;
-
 }
 
 .top-box1 {
@@ -390,69 +370,61 @@ display: block;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    
 }
 
 .top-box1 ul {
     color: white;
     list-style: none;
     margin-bottom: 20px;
+    font-weight: normal;
 }
 
-
-/* DIVIDER */
 .divider1 {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre le contenu horizontalement dans le conteneur */
-    width: 100%; /* Assurez-vous que le conteneur prend toute la largeur */
+    align-items: center;
+    width: 100%;
 }
 
-/* BOÎTE DU BAS */
 .bottom-box1 {
     margin-top: 20px;
-    width: 100%; /* Largeur de la boîte */
-    display: flex; /* Utilise flexbox pour l'alignement des éléments */
-    justify-content: space-between; /* Espace entre le texte à gauche et les icônes à droite */
-    align-items: center; /* Aligne verticalement le contenu */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* PARAGRAPHE */
 .bottom-box1 p {
-    color: white; /* Couleur du texte */
-    text-align: left; /* Alignement du texte à gauche */
-    font-size: 14px; /* Taille de la police */
-    padding: 10px; /* Ajoute un padding pour l'espacement interne */
-    flex-grow: 1; /* Laisse l'espace disponible à gauche pour le texte */
-    font-weight: normal; /* Assurez-vous que le texte n'est pas en gras */
+    color: white;
+    text-align: left;
+    font-size: 14px;
+    padding: 10px;
+    flex-grow: 1;
+    font-weight: normal;
 }
 
-/* PETITES BOÎTES */
 .small-boxes1 {
-    display: flex; /* Utilise flexbox pour l'alignement des icônes */
-    align-items: center; /* Centre verticalement les éléments */
-    gap: 15px; /* Espace entre les éléments */
-    padding: 5px; /* Ajoute un padding pour l'espacement interne */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 5px;
 }
-
 
 .ligneroseB {
     width: 60%;
-    height: 7px; /* Épaisseur visible */
-    background-color: #ff00ff; /* Couleur rose */
-    margin: 20px auto; /* Centre horizontalement */
+    height: 7px;
+    background-color: #ff00ff;
+    margin: 20px auto;
 }
-
 
 .lignerose {
     width: 10%;
-    height: 7px; /* Épaisseur */
-    background-color:#ff00ff;; /* Couleur rose */
+    height: 7px;
+    background-color:#ff00ff;
 }
 
 .Basic {
     width: 100%;
-    height: 3px; /* Épaisseur */
-    background-color:#646464;; /* Couleur rose */
-
+    height: 3px;
+    background-color:#646464;
 }
