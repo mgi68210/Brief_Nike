@@ -89,7 +89,7 @@ nav a:hover {
 }
 
 .left-box h1 {
-    font-size: 150px;
+    font-size: 190px;
     color: #77f8ff;
 }
 
@@ -99,7 +99,7 @@ nav a:hover {
 
 h2 {
     font-weight: normal; 
-    color: #77f8ff;
+    color: #ffffff;
     font-size: 60px;
     font-weight: bold;
 
@@ -108,6 +108,7 @@ h2 {
 
 .normal-weight {
     font-weight: normal;
+    
 }
 
 .left-box p {
@@ -157,6 +158,8 @@ h2 {
     background-image: radial-gradient(circle, #333333, #373737, #3a3a3a, #3e3e3e, #424242);
     border: 2px solid white;
     padding: 1px;
+    height: 100px;
+    width: 100px;
 }
 
 /* ICONES SOCIALES */
@@ -176,7 +179,7 @@ h2 {
 }
 
 
-/* SECONDE SECTION */
+/* SECTION 2 */
 
 
 .pricing-section1 {
@@ -191,9 +194,10 @@ h2 {
 
 .pricing-section1 h2 {
     color: #77f8ff;
-    font-size: 60px;
-    font-weight: bold;
-
+    font-size: 80px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 .cards-container1 {
@@ -263,6 +267,14 @@ h2 {
 }
 
 /* SECTION 3 */
+
+.cadre3 h2 {
+    color: #77f8ff;
+    font-size: 80px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
 
 .flexcontainer {
 display: flex;
