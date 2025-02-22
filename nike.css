@@ -140,6 +140,8 @@ h2 {
     left: 50%; 
     transform: translate(-50%, -50%); 
     height: auto; 
+    display: block; 
+
 }
 
 /* CHAUSSURES À DROITE */
@@ -168,10 +170,10 @@ h2 {
     position: absolute;
     right: 10px;
     top: 30%;
-    transform: translateY(-50%);
-    display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-top: 100px;
+
 }
 
 .social-vertical img {
@@ -531,8 +533,8 @@ margin-bottom: 70px;
     text-align: center;
     gap: 30px; 
     padding: 20px 0;
-    min-height: 800PX;
-    max-width: 800PX;
+    min-height: 1000PX;
+    max-width: 1000PX;
 }
 
 /* TEXTE */
@@ -543,19 +545,19 @@ margin-bottom: 70px;
 }
 
 .left-box h1 {
-    font-size: 40px;
+    font-size: 100px;
 }
 
 .left-box h2 {
-    font-size: 22px;
+    font-size:50px;
 }
 
 .left-box p {
-    font-size: 16px;
+    font-size: 30px;
 }
 
 .left-box button {
-    font-size: 14px;
+    font-size: 20px;
     padding: 8px 16px;
 }
 
@@ -565,12 +567,11 @@ margin-bottom: 70px;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    margin-top: 40px;
+    margin-top: 300px;
 }
 
 .chaussurenike img {
-    width: 100%;
-    height: auto;
+    height: 400PX;
     margin-bottom: 50px;
 }
 
@@ -579,13 +580,14 @@ margin-bottom: 70px;
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px;
+    margin-top: 300px;
     min-width: 100%;
+    
 
 }
 
 .shoes-horizontal img {
-    width: 60px;
+    width: 80px;
     height: auto;
     
 }
@@ -597,8 +599,7 @@ margin-bottom: 70px;
     justify-content: center;
     gap: 15px;
     width: 100%; 
-    margin-bottom: 20px; 
-    margin-top: 50px;
+    margin-top: 250px;
 }
 /* SECTION 2 */
 .pricing-section1 {
