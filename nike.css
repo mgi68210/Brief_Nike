@@ -112,7 +112,7 @@ h2 {
 }
 
 .left-box p {
-    font-size:30px;
+    font-size:25px;
     margin-top: 10px;
     font-weight: normal; 
 
@@ -167,20 +167,19 @@ h2 {
 
 /* ICONES SOCIALES */
 .social-vertical {
-    position: absolute;
-    right: 10px;
-    top: 30%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 15px;
-    margin-top: 100px;
-
+    position: absolute;
+    right: 20px; /* Positionné à droite */
+    top: 20%; /* Centré verticalement */
 }
 
 .social-vertical img {
     width: 30px;
     height: 30px;
 }
-
 
 /* SECTION 2 */
 
@@ -599,7 +598,7 @@ margin-bottom: 70px;
     justify-content: center;
     gap: 15px;
     width: 100%; 
-    margin-top: 250px;
+    margin-top: 300px;
 }
 /* SECTION 2 */
 .pricing-section1 {
