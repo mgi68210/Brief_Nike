@@ -2,6 +2,7 @@
 * {
     margin: 0px;
     padding: 0;
+    border: none;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif
 }
@@ -110,8 +111,10 @@ h2 {
 }
 
 .left-box p {
-    font-size: 18px;
+    font-size:30px;
     margin-top: 10px;
+    font-weight: normal; /* Assurez-vous que le texte n'est pas en gras */
+
 }
 
 .left-box button {
@@ -261,13 +264,19 @@ h2 {
 
 /* SECTION 3 */
 
-.cadre3 {
+.flexcontainer {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 70px;
+
 
 }
+
+
 .cadreCarre {
-    width: 1100px;
-    height: 780px;
-    margin-left: 10% ;
+    width: 1000px;
+    height: 800px;
 
 }
 .parent {
@@ -358,6 +367,7 @@ display: block;
     width: 100%;
     height: 250px;
     padding: 20px;
+
 }
 
 .top-box1 {
@@ -367,66 +377,69 @@ display: block;
     justify-content: space-around;
     align-items: center;
     padding: 20px;
+    
 }
 
 .top-box1 ul {
     color: white;
     list-style: none;
+    margin-bottom: 20px;
 }
 
+
+/* DIVIDER */
 .divider1 {
-    width: 90%;
-    height: 2px;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le contenu horizontalement dans le conteneur */
+    width: 100%; /* Assurez-vous que le conteneur prend toute la largeur */
 }
 
+/* BOÎTE DU BAS */
 .bottom-box1 {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    margin-top: 20px;
+    width: 100%; /* Largeur de la boîte */
+    display: flex; /* Utilise flexbox pour l'alignement des éléments */
+    justify-content: space-between; /* Espace entre le texte à gauche et les icônes à droite */
+    align-items: center; /* Aligne verticalement le contenu */
 }
 
+/* PARAGRAPHE */
 .bottom-box1 p {
-    color: white;
-    text-align: left; 
-    font-size: 14px;
-    padding: 10px;
+    color: white; /* Couleur du texte */
+    text-align: left; /* Alignement du texte à gauche */
+    font-size: 14px; /* Taille de la police */
+    padding: 10px; /* Ajoute un padding pour l'espacement interne */
+    flex-grow: 1; /* Laisse l'espace disponible à gauche pour le texte */
+    font-weight: normal; /* Assurez-vous que le texte n'est pas en gras */
 }
-    
 
+/* PETITES BOÎTES */
 .small-boxes1 {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    gap: 5px;
-    padding: 5px;
+    display: flex; /* Utilise flexbox pour l'alignement des icônes */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 15px; /* Espace entre les éléments */
+    padding: 5px; /* Ajoute un padding pour l'espacement interne */
 }
 
-.small-boxes1 div {
-    width: 20px;
-    height: 20px;
-}
 
 .ligneroseB {
-    width: 30%;
-    height: 5px; /* Épaisseur */
-    background-color:#ff00ff;; /* Couleur rose */
-    border: none;
+    width: 60%;
+    height: 7px; /* Épaisseur visible */
+    background-color: #ff00ff; /* Couleur rose */
+    margin: 20px auto; /* Centre horizontalement */
 }
+
 
 .lignerose {
-    width: 30%;
-    position: center;
-    height: 5px; /* Épaisseur */
+    width: 10%;
+    height: 7px; /* Épaisseur */
     background-color:#ff00ff;; /* Couleur rose */
-    border: none;
 }
 
-.ligneroseb {
-    position: center;
-    height: 5px; /* Épaisseur */
-    background-color:#ff00ff;; /* Couleur rose */
-    border: none;
+.Basic {
+    width: 100%;
+    height: 3px; /* Épaisseur */
+    background-color:#646464;; /* Couleur rose */
+
 }
