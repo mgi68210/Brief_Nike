@@ -93,11 +93,16 @@
             padding: 20px;
         }
 
-        .left-box h1,
         .left-box p,
         .left-box button {
             margin-bottom: 10px;
             font-size: 20px;
+            font-weight: normal;
+        }
+
+        .left-box h1{
+            margin-bottom: 10px;
+            font-size: 30px;
             font-weight: bold;
         }
 
@@ -159,7 +164,7 @@
         }
 
         .pricing-section h2 {
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
             margin-bottom: 20px;
             align-self: flex-start;
@@ -210,15 +215,25 @@
         }
 
         /* SECTION GRILLE CSS */
-        .grid-container {
+        .section1 {
+            background: #bfbfbf;
+            gap: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            height: 600px;
+            padding-left: 20px;
+
+                
+        }
+
+        .grid-container1 {
             background: #bfbfbf;
             display: grid;
             grid-template-columns: 2fr 1fr 1fr 1.5fr;
             grid-template-rows: repeat(3, 1fr);
             gap: 10px;
             padding: 10px;
-            border: 2px solid black;
-            height: 600px;
+            height: 500px;
         }
 
         .grid-item {
@@ -356,9 +371,8 @@
     </header>
 
     <!-- SECTION VISUELLE -->
-    <div class="section section-visual">
+    <section class="section section-visual">
         <div class="left-box">
-            <h1>titre</h1>
             <h1>titre</h1>
             <p>para</p>
             <button>button</button>
@@ -375,10 +389,10 @@
                 <div></div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- SECTION PRICING -->
-    <div class="section pricing-section">
+    <section class="section pricing-section">
         <h2>titre</h2>
         <div class="cards-container">
             <div class="card">
@@ -403,11 +417,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- SECTION GRILLE CSS -->
-    <div class="section">
-        <div class="grid-container">
+    <section class="section1">
+        <h1>titre</h1>
+        <div class="grid-container1">
             <div class="grid-item item1"><button class="button">button</button></div>
             <div class="grid-item item2"><button class="button">button</button></div>
             <div class="grid-item item3"><button class="button">button</button></div>
@@ -415,10 +430,10 @@
             <div class="grid-item item5"><button class="button">button</button></div>
             <div class="grid-item item6"><button class="button">button</button></div>
         </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    <div class="footer-section">
+    <section class="footer-section">
         <div class="top-box">
             <ul>ul</ul>
             <ul>ul</ul>
@@ -433,7 +448,7 @@
                 <div></div>
             </div>
         </div>
-    </div>
+    </section>
 
 </body>
 </html>
